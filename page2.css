@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#message {
+    height: 150px;
+    width: 600px;
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+
+    margin: 0 auto;
+    display: flex;
+}
+
+.cup {
+    width: 230px;
+    height: 400px;
+    background-color: #ccc;
+    border: 2px solid #333;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.cup::after {
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Add a class to style the cup with the ball */
+.cup.with-ball {
+    background-color: #ccc;
+    border: 2px solid #333;
+    cursor: pointer;
+    position: relative;
+}
+
+.cup.with-ball::after {
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.cup.wining-ball::after {
+    content: '🏀';
+}
+
+
+.btn {
+    height: 150px;
+    width: 400px;
+    font-size: 50px;
+    text-decoration: none;
+    margin: 50px;
+}
